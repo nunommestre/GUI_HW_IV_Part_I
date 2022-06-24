@@ -153,6 +153,8 @@ document.querySelector("button").addEventListener("click", function () {
       Number(multiplicand_bottom),
       Number(multiplicand_top)
     );
+  } else {
+    return false;
   }
   document.getElementById("m_table").style.visibility = "visible";
   form.reset();
