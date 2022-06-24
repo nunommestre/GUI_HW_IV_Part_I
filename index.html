@@ -1,0 +1,54 @@
+<!--
+File: index.html
+GUI Assignment: Adding JQuery Validation (HW4-Pt1)
+Nuno Mestre, UMass Lowell Computer Science, nuno_mestre@student.uml.edu
+June 23, 2022
+Description: Using the ready function and .validate I make some requirements that 
+must be met before submitting a form.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Multiplication Table</title>
+    <meta charset="utf-8" />
+    <!-- Stylesheets -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>AMONG US MATHEMATICS</h1>
+    <div class="form">
+      <!-- Simple form requesting 4 numbers -->
+      <form id="input_form">
+        <h1>Enter your values:</h1>
+        <p>Lowest x value</p>
+        <!-- Identified in the validation form by the name attributes value -->
+        <input type="text" id="x1" name="x1" placeholder="Number" />
+        <p>Greatest x value</p>
+        <input type="text" id="x2" name="x2" placeholder="Number" />
+        <p>Lowest y value</p>
+        <input type="text" id="y1" name="y1" placeholder="Number" />
+        <p>Greatest y value</p>
+        <input type="text" id="y2" name="y2" placeholder="Number" />
+      </form>
+      <button type="submit" name="submit" class="btn">
+        <img src="Images/Button.png" alt="Among Us Start button" />
+      </button>
+    </div>
+    <!-- Where the table is set to be -->
+    <div class="table_div">
+      <table id="m_table"></table>
+    </div>
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <!-- Scripts -->
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
