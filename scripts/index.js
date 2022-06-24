@@ -156,6 +156,9 @@ document.querySelector("button").addEventListener("click", function () {
   } else {
     return false;
   }
+  else{
+    return false;
+  }
   document.getElementById("m_table").style.visibility = "visible";
   form.reset();
 
